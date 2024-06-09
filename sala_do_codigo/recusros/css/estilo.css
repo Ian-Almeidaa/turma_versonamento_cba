@@ -1,28 +1,31 @@
 
-@import {
-    url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
-
+@font-face {
+    font-family: 'Kavoon';
+    src: url("../fonts/Kavoon/Kavoon-Regular.ttf") format('truetype');
 }
 
 *{
     margin: 0;
     padding: 0;
-  
+}
+
+html{
+    font-size: 16px;
 }
 
 body{
     background-color: #D6D6D6;
+    font-family: 'Kavoon', sans-serif;
 }
 
 header{
     width: 90%;
-    margin: 2% 5%;
+    margin: 3% 5%;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-around;
-  
 }
 
 header nav ul li {
@@ -31,18 +34,25 @@ header nav ul li {
 
 header nav ul li  a {
     color: black;
-    font-family:;
+    text-decoration: none;  
+    font-size: 1.5vw; /* Ajusta o tamanho do texto conforme a largura da tela */
+    /* font-size: 5vh; */ /* Ajusta o tamanho do texto conforme a altura da tela */
+    /* font-size: 5vh; */ /* Ajusta o tamanho do texto conforme a altura da tela */
+    /* font-size: 3vmax; */ /* Ajusta o tamanho do texto conforme a maior dimensão da tela */
 }
 
+header nav ul li  a:hover {
+    color: slateblue;
+}
 
 header nav ul li ul {
     position: absolute;
     top:35px;
-    right: 835px;
+    right: 775px;
     border: 1px solid slateblue;
     display: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     z-index: 5;
 }
 
@@ -63,13 +73,12 @@ header nav ul li ul:hover {
 
 header section {
     position: relative;
-    bottom: 23px;
+    bottom: 30px;
     z-index: -5;
 }
 
 header section img{
     width: 100%;
-    height: 500px;
     border-radius: 10px;
     border: 2px solid #FFF9F9;
 }
